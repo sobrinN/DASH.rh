@@ -88,7 +88,7 @@ const Pricing = () => {
             >
                 <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#111] border border-orange-500/30 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-6 font-mono">
                     <Zap size={12} />
-                    ATUALIZACAO_DISPONIVEL
+                    ATUALIZACAO DISPONIVEL
                 </span>
                 <h1 className="text-3xl font-bold text-white uppercase tracking-[0.2em] mb-4 font-mono">
                     PLANOS_<span className="text-orange-500 underline decoration-2 decoration-orange-500 underline-offset-8">ASSINATURA</span>
@@ -177,7 +177,7 @@ const Pricing = () => {
                                 ) : isCurrentPlan ? (
                                     <>
                                         <Check size={14} />
-                                        STATUS_ATUAL_ATIVO
+                                        STATUS ATUAL ATIVO
                                     </>
                                 ) : (
                                     <>
@@ -201,10 +201,10 @@ const Pricing = () => {
                 <div className="factory-panel p-6 max-w-xl mx-auto border-t border-t-green-500/30">
                     <div className="flex items-center justify-center gap-3 mb-2">
                         <Shield size={18} className="text-green-500" />
-                        <h3 className="text-sm font-bold text-white uppercase font-mono tracking-widest">PROTOCOLO_GARANTIA_SATISFACAO</h3>
+                        <h3 className="text-sm font-bold text-white uppercase font-mono tracking-widest">PROTOCOLO GARANTIA & SATISFACAO</h3>
                     </div>
                     <p className="text-[10px] text-gray-500 font-mono uppercase tracking-wide">
-                        14 DIAS TESTE // 100% REEMBOLSO // SEM PERGUNTAS
+                        14 DIAS TESTE // 100% REEMBOLSO
                     </p>
                 </div>
             </motion.div>

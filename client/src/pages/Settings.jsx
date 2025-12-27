@@ -51,7 +51,7 @@ const Settings = () => {
                         <SettingsIcon size={24} className="text-orange-500" />
                     </div>
                     <h1 className="text-2xl font-bold text-white uppercase tracking-widest font-mono">
-                        CONFIGURACAO_SISTEMA
+                        CONFIGURAÇÃO SISTEMA
                     </h1>
                 </div>
                 <p className="text-gray-500 text-xs font-mono">
@@ -71,14 +71,14 @@ const Settings = () => {
 
                 <div className="flex items-center gap-3 mb-8 border-b border-[#222] pb-4">
                     <h2 className="text-sm font-bold text-white uppercase tracking-widest font-mono">
-                        PERFIL_USUARIO
+                        PERFIL USUARIO
                     </h2>
                 </div>
 
                 <div className="space-y-4">
                     <div>
                         <label className="block text-[10px] text-gray-500 mb-2 uppercase tracking-widest font-mono">
-                            EMAIL_REGISTRADO
+                            EMAIL REGISTRADO
                         </label>
                         <div className="flex items-center gap-3 p-4 bg-[#111] border border-[#333] group hover:border-gray-600 transition-colors">
                             <Mail size={16} className="text-orange-500" />
@@ -101,14 +101,14 @@ const Settings = () => {
 
                 <div className="flex items-center gap-3 mb-8 border-b border-[#222] pb-4">
                     <h2 className="text-sm font-bold text-white uppercase tracking-widest font-mono">
-                        DADOS_EMPRESA
+                        DADOS DA EMPRESA
                     </h2>
                 </div>
 
                 <div className="space-y-6">
                     <div>
                         <label className="block text-[10px] text-gray-500 mb-2 uppercase tracking-widest font-mono">
-                            NOME_ORGANIZACAO
+                            NOME DA ORGANIZAÇÃO
                         </label>
                         <input
                             type="text"
@@ -129,12 +129,12 @@ const Settings = () => {
                         ) : success ? (
                             <>
                                 <CheckCircle size={16} />
-                                ALTERACOES_SALVAS
+                                ALTERACOES SALVAS
                             </>
                         ) : (
                             <>
                                 <Save size={16} />
-                                SALVAR_CONFIGURACAO
+                                SALVAR CONFIGURAÇÃO
                             </>
                         )}
                     </button>
@@ -154,7 +154,7 @@ const Settings = () => {
 
                 <div className="flex items-center gap-3 mb-8 border-b border-[#222] pb-4">
                     <h2 className="text-sm font-bold text-white uppercase tracking-widest font-mono">
-                        STATUS_ASSINATURA
+                        STATUS DA ASSINATURA
                     </h2>
                 </div>
 
@@ -174,7 +174,7 @@ const Settings = () => {
                             href="/pricing"
                             className="px-6 py-3 bg-orange-500 text-black font-bold text-xs uppercase hover:bg-orange-400 transition-colors font-mono tracking-wider border border-orange-500"
                         >
-                            ATUALIZAR_SISTEMA
+                            ATUALIZAR SISTEMA
                         </a>
                     )}
                 </div>

@@ -183,7 +183,7 @@ const TalentRequest = () => {
                     </motion.div>
 
                     <h2 className="text-2xl font-bold text-white uppercase tracking-widest font-mono mb-4">
-                        SOLICITACAO_PROCESSADA_COM_SUCESSO
+                        SOLICITAÇÃO PROCESSADA COM SUCESSO
                     </h2>
 
                     <div className="w-16 h-1 bg-green-500 mx-auto mb-6"></div>
@@ -195,7 +195,7 @@ const TalentRequest = () => {
 
                     <div className="inline-block p-4 border border-green-500/20 bg-green-900/10 mb-8">
                         <p className="text-[10px] text-green-500 font-bold uppercase tracking-[0.2em]">
-                            STATUS_MISSAO: CONCLUIDO
+                            STATUS MISSÃO: CONCLUIDO
                         </p>
                     </div>
 
@@ -205,7 +205,7 @@ const TalentRequest = () => {
                         onClick={resetForm}
                         className="factory-btn factory-btn-primary"
                     >
-                        INICIAR_NOVA_SOLICITACAO
+                        INICIAR NOVA SOLICITAÇÃO
                     </button>
                 </motion.div>
             </div>
@@ -225,7 +225,7 @@ const TalentRequest = () => {
                         <FileText size={24} className="text-orange-500" />
                     </div>
                     <h1 className="text-2xl font-bold text-white uppercase tracking-widest font-mono">
-                        REQUISICAO_PESSOAL
+                        REQUISIÇÃO PESSOAL
                     </h1>
                 </div>
                 <p className="text-gray-500 text-xs font-mono">
@@ -303,16 +303,16 @@ const TalentRequest = () => {
                         >
                             <div className="mb-8 border-b border-[#222] pb-4">
                                 <h2 className="text-sm font-bold text-white uppercase tracking-widest font-mono mb-1">
-                                    ETAPA_01 // IDENTIFICACAO_SOLICITANTE
+                                    ETAPA_01 // IDENTIFICAÇÃO SOLICITANTE
                                 </h2>
                                 <p className="text-[10px] text-gray-500 font-mono">
-                                    IDENTIFIQUE A ORIGEM DA SOLICITACAO E ZONA DE IMPLANTACAO.
+                                    IDENTIFIQUE A ORIGEM DA SOLICITAÇÃO E ZONA DE IMPLANTAÇÃO.
                                 </p>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">EMAIL_CONTATO *</label>
+                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">EMAIL CONTATO *</label>
                                     <input
                                         type="email"
                                         value={formData.email}
@@ -322,7 +322,7 @@ const TalentRequest = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">NOME_COMPLETO *</label>
+                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">NOME COMPLETO *</label>
                                     <input
                                         type="text"
                                         value={formData.nomeCompleto}
@@ -335,7 +335,7 @@ const TalentRequest = () => {
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">CARGO_ATUAL *</label>
+                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">CARGO ATUAL *</label>
                                     <input
                                         type="text"
                                         value={formData.cargo}
@@ -358,7 +358,7 @@ const TalentRequest = () => {
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">DATA_SOLICITACAO *</label>
+                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">DATA SOLICITAÇÃO *</label>
                                     <input
                                         type="date"
                                         value={formData.dataSolicitacao}
@@ -399,7 +399,7 @@ const TalentRequest = () => {
                         >
                             <div className="mb-8 border-b border-[#222] pb-4">
                                 <h2 className="text-sm font-bold text-white uppercase tracking-widest font-mono mb-1">
-                                    ETAPA_02 // ESPECIFICACAO_CARGO
+                                    ETAPA_02 // ESPECIFICAÇÃO DO CARGO
                                 </h2>
                                 <p className="text-[10px] text-gray-500 font-mono">
                                     DEFINA OS PARAMETROS OPERACIONAIS PARA A NOVA UNIDADE.
@@ -407,7 +407,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">TITULO_CARGO *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">TÍTULO DO CARGO *</label>
                                 <input
                                     type="text"
                                     value={formData.tituloVaga}
@@ -418,7 +418,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">MOTIVO_REQUISICAO *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">MOTIVO DA REQUISIÇÃO *</label>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                                     {MOTIVOS.map((motivo) => (
                                         <button
@@ -438,7 +438,7 @@ const TalentRequest = () => {
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">LOCAL_TRABALHO *</label>
+                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">LOCAL DO TRABALHO *</label>
                                     <div className="grid grid-cols-2 gap-2">
                                         {LOCAIS.map((local) => (
                                             <button
@@ -466,7 +466,7 @@ const TalentRequest = () => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">TIPO_CONTRATO *</label>
+                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">TIPO DE CONTRATO *</label>
                                     <div className="grid grid-cols-2 gap-2">
                                         {REGIMES.slice(0, 4).map((regime) => (
                                             <button
@@ -486,7 +486,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">PACOTE_BENEFICIOS *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">PACOTE DE BENEFICIOS *</label>
                                 <textarea
                                     value={formData.beneficios}
                                     onChange={(e) => updateField('beneficios', e.target.value)}
@@ -508,15 +508,15 @@ const TalentRequest = () => {
                         >
                             <div className="mb-8 border-b border-[#222] pb-4">
                                 <h2 className="text-sm font-bold text-white uppercase tracking-widest font-mono mb-1">
-                                    ETAPA_03 // PERFIL_CANDIDATO
+                                    ETAPA_03 // PERFIL DO CANDIDATO
                                 </h2>
                                 <p className="text-[10px] text-gray-500 font-mono">
-                                    DEFINA AS ESPECIFICACOES E VETORES DE ATITUDE REQUERIDOS.
+                                    DEFINA AS ESPECIFICAÇÕES E VETORES DE ATITUDE REQUERIDOS.
                                 </p>
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">FAIXA_ETARIA *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">FAIXA ETÁRIA *</label>
                                 <input
                                     type="text"
                                     value={formData.faixaIdade}
@@ -527,7 +527,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">HABILIDADES_TECNICAS *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">HABILIDADES TÉCNICAS *</label>
                                 <textarea
                                     value={formData.habilidadesTecnicas}
                                     onChange={(e) => updateField('habilidadesTecnicas', e.target.value)}
@@ -537,7 +537,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">VETORES_COMPORTAMENTAIS *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">VETORES DE COMPORTAMENTO *</label>
                                 <textarea
                                     value={formData.atitudesComportamentos}
                                     onChange={(e) => updateField('atitudesComportamentos', e.target.value)}
@@ -547,7 +547,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">CARACTERISTICAS_PESSOAIS *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">CARACTERÍSTICAS PESSOAIS *</label>
                                 <textarea
                                     value={formData.caracteristicasPessoais}
                                     onChange={(e) => updateField('caracteristicasPessoais', e.target.value)}
@@ -577,7 +577,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">TAREFAS_PRINCIPAIS *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">TAREFAS PRINCIPAIS *</label>
                                 <textarea
                                     value={formData.atividadesResponsabilidades}
                                     onChange={(e) => updateField('atividadesResponsabilidades', e.target.value)}
@@ -587,7 +587,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">METRICAS_SUCESSO *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">METRICAS DE SUCESSO *</label>
                                 <textarea
                                     value={formData.metasIndicadores}
                                     onChange={(e) => updateField('metasIndicadores', e.target.value)}
@@ -597,7 +597,7 @@ const TalentRequest = () => {
                             </div>
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">EXIGE_TESTE_PRATICO? *</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">EXIGE TESTE PRÁTICO? *</label>
                                 <div className="flex gap-4">
                                     {['Sim', 'Não'].map((opt) => (
                                         <button
@@ -620,7 +620,7 @@ const TalentRequest = () => {
                                     initial={{ opacity: 0, height: 0 }}
                                     animate={{ opacity: 1, height: 'auto' }}
                                 >
-                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1 mt-4">PARAMETROS_TESTE</label>
+                                    <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1 mt-4">PARAMETROS DO TESTE</label>
                                     <textarea
                                         value={formData.habilidadesTestadas}
                                         onChange={(e) => updateField('habilidadesTestadas', e.target.value)}
@@ -631,7 +631,7 @@ const TalentRequest = () => {
                             )}
 
                             <div>
-                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">DADOS_ADICIONAIS</label>
+                                <label className="block text-[10px] text-gray-500 font-mono uppercase mb-1">DADOS ADICIONAIS</label>
                                 <textarea
                                     value={formData.observacoes}
                                     onChange={(e) => updateField('observacoes', e.target.value)}
@@ -662,7 +662,7 @@ const TalentRequest = () => {
                             onClick={handleNext}
                             className="factory-btn factory-btn-primary flex items-center gap-2"
                         >
-                            PROXIMA_ETAPA
+                            PROXIMA ETAPA
                             <ChevronRight size={16} />
                         </button>
                     ) : (
@@ -675,7 +675,7 @@ const TalentRequest = () => {
                                 <Loader2 className="animate-spin" size={16} />
                             ) : (
                                 <>
-                                    ENVIAR_SOLICITACAO
+                                    ENVIAR SOLICITAÇÃO
                                     <Send size={16} />
                                 </>
                             )}
