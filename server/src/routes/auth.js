@@ -3,11 +3,9 @@ import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import { v4 as uuidv4 } from 'uuid'
 import { query, queryOne, execute } from '../db/duckdb.js'
+import { JWT_SECRET, JWT_EXPIRES_IN, isValidEmail, isValidPassword, MIN_PASSWORD_LENGTH } from '../middleware/auth.js'
 
 const router = Router()
-
-const JWT_SECRET = process.env.JWT_SECRET || 'dash-rh-secret-key-change-in-production'
-const JWT_EXPIRES_IN = '7d'
 
 /**
  * Sign up - Create new user and company
@@ -20,6 +18,20 @@ router.post('/signup', async (req, res) => {
         if (!email || !password || !companyName) {
             return res.status(400).json({
                 error: 'Email, senha e nome da empresa são obrigatórios'
+            })
+        }
+
+        // Validate email format
+        if (!isValidEmail(email)) {
+            return res.status(400).json({
+                error: 'Formato de email inválido'
+            })
+        }
+
+        // Validate password strength
+        if (!isValidPassword(password)) {
+            return res.status(400).json({
+                error: `Senha deve ter no mínimo ${MIN_PASSWORD_LENGTH} caracteres`
             })
         }
 

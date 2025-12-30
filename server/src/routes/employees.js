@@ -1,43 +1,9 @@
 import { Router } from 'express'
-import jwt from 'jsonwebtoken'
 import { v4 as uuidv4 } from 'uuid'
 import { query, queryOne, execute } from '../db/duckdb.js'
+import { authMiddleware } from '../middleware/auth.js'
 
 const router = Router()
-
-const JWT_SECRET = process.env.JWT_SECRET || 'dash-rh-secret-key-change-in-production'
-
-/**
- * Middleware to verify JWT and attach user to request
- */
-async function authMiddleware(req, res, next) {
-    try {
-        const authHeader = req.headers.authorization
-
-        if (!authHeader || !authHeader.startsWith('Bearer ')) {
-            return res.status(401).json({ error: 'Não autorizado' })
-        }
-
-        const token = authHeader.split(' ')[1]
-        const decoded = jwt.verify(token, JWT_SECRET)
-
-        // Fetch company for user
-        const company = await queryOne(
-            'SELECT * FROM companies WHERE owner_id = ?',
-            [decoded.userId]
-        )
-
-        if (!company) {
-            return res.status(401).json({ error: 'Empresa não encontrada' })
-        }
-
-        req.userId = decoded.userId
-        req.company = company
-        next()
-    } catch (error) {
-        return res.status(401).json({ error: 'Token inválido' })
-    }
-}
 
 /**
  * Get all employees for user's company
